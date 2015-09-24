@@ -21,9 +21,7 @@ class GuideService(baseUrl: String) {
 
     request.get() map { response =>
       if (response.status == 200) {
-        val bb = builder.toAssets(response.xml, pageSize)
-        println(bb)
-        bb
+        builder.toAssets(response.xml, pageSize)
       }
       else {
         Seq.empty

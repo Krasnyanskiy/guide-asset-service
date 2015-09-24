@@ -1,7 +1,7 @@
 import _root_.sbt.Keys._
 import play.Project._
 
-name := "guide-assets"
+name := "guide-asset-service"
 
 version := "1.0"
 

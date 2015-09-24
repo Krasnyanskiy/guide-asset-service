@@ -11,4 +11,4 @@ EXPOSE 9000
 RUN unset http_proxy && unset https_proxy
 ENV JAVA_OPTS "-Djavax.net.ssl.trustStore=/etc/pki/cosmos/current/client.jks -Djavax.net.ssl.trustStorePassword=changeit -Djavax.net.ssl.keyStore=/etc/pki/tls/private/client.p12 -Djavax.net.ssl.keyStorePassword=client -Djavax.net.ssl.keyStoreType=PKCS12"
 WORKDIR /opt/guide-assets/
-CMD bin/guide-assets
+CMD bin/guide-asset-service
